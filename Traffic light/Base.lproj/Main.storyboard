@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="landscape" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,35 +13,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Traffic_light" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="J24-Je-aKx">
-                                <rect key="frame" x="123" y="67" width="680" height="307"/>
+                                <rect key="frame" x="123" y="67" width="182" height="805"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZNP-zj-8sH">
-                                        <rect key="frame" x="0.0" y="0.0" width="505" height="307"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="671"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAJ-Iy-ntK">
-                                                <rect key="frame" x="0.0" y="0.0" width="148.33333333333334" height="307"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="203.66666666666666"/>
                                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5E-fX-fqb">
-                                                <rect key="frame" x="178.33333333333331" y="0.0" width="148.33333333333331" height="307"/>
+                                                <rect key="frame" x="0.0" y="233.66666666666669" width="182" height="203.66666666666669"/>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntk-oP-VAJ">
-                                                <rect key="frame" x="356.66666666666669" y="0.0" width="148.33333333333331" height="307"/>
+                                                <rect key="frame" x="0.0" y="467.33333333333343" width="182" height="203.66666666666669"/>
                                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                             </view>
                                         </subviews>
                                         <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
                                         <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2w-B9-W99">
-                                        <rect key="frame" x="605" y="0.0" width="75" height="307"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2w-B9-W99">
+                                        <rect key="frame" x="0.0" y="771" width="182" height="34"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
                                             <action selector="changerLightsDidTappeed" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfe-RM-SHV"/>
                                         </connections>
